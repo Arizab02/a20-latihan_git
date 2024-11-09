@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lathian_1</title>
+    <title>Tutorial git</title>
     <style>
         div.blok_code {
-            background-color: grey;
+            background-color: rgba(156, 156, 156, 0.25);
             border-radius: 2%;
+            text-align: left;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 20px;
+            padding: 5%;
         }
     </style>
 </head>
@@ -16,10 +20,10 @@
         <h1>Cara masukkin file ke git repository</h1>
         <p>Caranya adalah config dulu dulu ke git dengan cara ketikkan :<br>
             <div class="blok_code">
-                <pre>
-                    git config --global user.email "your@example.com"
+                <p>
+                    git config --global user.email "your@example.com" <br>
                     git config --global user.name "Your name"
-                </pre>
+                </p>
             </div>
             <br> <br>
             kemudian check dengan git config --list apakah sudah masuk atau belum
@@ -27,31 +31,31 @@
             yang kedua: <br> <br>
             tulis kan code di bawah untuk menambahkan file .git yang akan memantau semua perubahan yang terjadi pada direktori tersebut <br> <br>
             <div class="blok_code">
-                <pre>
+                <p>
                 git init
-                </pre>
+                </p>
             </div>
             <br> <br>
             yang ketiga <br> <br>
-            sambungin repository yang akan kamu buat di git dengan github pakai kode : <br> <br>
+            Buat dulu repository di GitHub lalu sambungin repository yang akan kamu buat di Git dengan GitHub pakai kode : <br> <br>
             <div class="blok_code">
-                <pre>
+                <p>
                 git remote add nama_remote &lt;https:ww.web-github-repository-kamu.com &gl;
-                </pre>
+                </p>
             </div> <br> <br>
             cara ngecek remote yang sudah kamu bikin pakai kode:
             <div class="blok_code">
-                <pre>
+                <p>
                 git remote
-                </pre>
+                </p>
             </div>
             <br> <br>
             yang keempat: <br> <br>
             masukkan file yang mau di masukin pake kode: <br> <br>
             <div class="blok_code">
-                <pre>
+                <p>
                 git add nama_file 
-                </pre>
+                </p>
             </div>
              nanti kalau kamu mengguknakan visual studio code terdapat kode di samping nama file: <br> <br>
              <table>
@@ -62,7 +66,7 @@
                 </tr>
                 <tr>
                     <td>U</td>
-                    <td>Un.....</td>
+                    <td>Untracked</td>
                 </tr>
                 <tr>
                     <td>A</td>
@@ -76,18 +80,29 @@
             yang kelima: <br> <br>
             masukkan kode berikut untuk memasukkan perubahan pada file:
             <div class="blok_code">
-                <pre>
+                <p>
                 git commit -m "status file"
-                </pre>
+                </p>
             </div> <br> <br>
 
             yang keenam: <br> <br>
             masukkan file ke github dengan perintah push : <br> <br>
             <div class="blok_code">
-                <pre>
+                <p>
                 git push -u nama_remote nama_branch
-                </pre>
+                </p>
             </div> <br> <br>
+
+            <dl>
+                <h1>Usual Command Git</h1>
+                <h2>Configuring Git</h2>
+                <dt>git config --global user.name "Your Name"</dt>
+                <dd>Set the name that will be attached to your commits</dd>
+                <dt>git config --global user.email "Youremail@gmail.com"</dt>
+                <dd>Set the email that will be attached to your commits</dd>
+                <dt>git config -- --global core.editor "code --wait"</dt>
+                <dd>Set the default editor used by Git</dd>
+            </dl>
 
             Selesai !!.....
         </p>
