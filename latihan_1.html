@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lathian_1</title>
+    <style>
+        div.blok_code {
+            background-color: grey;
+            border-radius: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Cara masukkin file ke git repository</h1>
+        <p>Caranya adalah config dulu dulu ke git dengan cara ketikkan :<br>
+            <div class="blok_code">
+                <pre>
+                    git config --global user.email "your@example.com"
+                    git config --global user.name "Your name"
+                </pre>
+            </div>
+            <br> <br>
+            kemudian check dengan git config --list apakah sudah masuk atau belum
+            <br> <br>
+            yang kedua: <br> <br>
+            tulis kan code di bawah untuk menambahkan file .git yang akan memantau semua perubahan yang terjadi pada direktori tersebut <br> <br>
+            <div class="blok_code">
+                <pre>
+                git init
+                </pre>
+            </div>
+            <br> <br>
+            yang ketiga <br> <br>
+            sambungin repository yang akan kamu buat di git dengan github pakai kode : <br> <br>
+            <div class="blok_code">
+                <pre>
+                git remote add nama_remote &lt;https:ww.web-github-repository-kamu.com &gl;
+                </pre>
+            </div> <br> <br>
+            cara ngecek remote yang sudah kamu bikin pakai kode:
+            <div class="blok_code">
+                <pre>
+                git remote
+                </pre>
+            </div>
+            <br> <br>
+            yang keempat: <br> <br>
+            masukkan file yang mau di masukin pake kode: <br> <br>
+            <div class="blok_code">
+                <pre>
+                git add nama_file 
+                </pre>
+            </div>
+             nanti kalau kamu mengguknakan visual studio code terdapat kode di samping nama file: <br> <br>
+             <table>
+                <tr><td>Arti kode pada git</td></tr>
+                <tr>
+                    <td>Kode</td>
+                    <td>Arti</td>
+                </tr>
+                <tr>
+                    <td>U</td>
+                    <td>Un.....</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>Index Added</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>Modified</td>
+                </tr>
+             </table> <br> <br>
+            yang kelima: <br> <br>
+            masukkan kode berikut untuk memasukkan perubahan pada file:
+            <div class="blok_code">
+                <pre>
+                git commit -m "status file"
+                </pre>
+            </div> <br> <br>
+
+            yang keenam: <br> <br>
+            masukkan file ke github dengan perintah push : <br> <br>
+            <div class="blok_code">
+                <pre>
+                git push -u nama_remote nama_branch
+                </pre>
+            </div> <br> <br>
+
+            Selesai !!.....
+        </p>
+    </div>
+</body>
+</html>
